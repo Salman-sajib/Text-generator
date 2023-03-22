@@ -79,6 +79,7 @@ form.addEventListener("submit", function (e) {
   // empty
   // -1
   // >9
+  // 0
   if (isNaN(value) || value < 0 || value > 9) {
     result.innerHTML = `<p class="result">${text[random]}</p>`;
   } else if (value === 0) {
