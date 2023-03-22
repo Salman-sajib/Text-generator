@@ -36,9 +36,9 @@ const text = [
   You can't just have your characters announce how they feel. That makes me feel angry! 
   Anyhoo, your net-suits will allow you to experience Fry's worm infested bowels 
   as if you were actually wriggling through them.
-I just told you! You've killed me! Fry! Quit doing the right thing, you jerk! Michelle, 
-I don't regret this, but I both rue and lament it. Morbo can't understand his teleprompter 
-because he forgot how you say that letter that's shaped like a man wearing a hat.`,
+  I just told you! You've killed me! Fry! Quit doing the right thing, you jerk! Michelle, 
+  I don't regret this, but I both rue and lament it. Morbo can't understand his teleprompter 
+  because he forgot how you say that letter that's shaped like a man wearing a hat.`,
 
   `Airedale hard cheese mozzarella. Pecorino melted cheese port-salut emmental 
   babybel cheese and wine melted cheese manchego. Everyone loves blue 
@@ -83,7 +83,7 @@ form.addEventListener("submit", function (e) {
   if (isNaN(value) || value < 0 || value > 9) {
     result.innerHTML = `<p class="result">${text[random]}</p>`;
   } else if (value === 0) {
-    result.innerHTML = `<p class="result" id="zero-value">Please give a value between 1 to 9</p>`;
+    result.innerHTML = `<p class="result" id="zero-value">Please input a value between 1 to 9</p>`;
     const zeroValue = document.getElementById("zero-value");
     zeroValue.style.color = "red";
     zeroValue.style.fontSize = "1rem";

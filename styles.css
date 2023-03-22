@@ -162,17 +162,12 @@ p {
 }
 
 .section-center {
-  width: 90vw;
+  width: min(100% - 2rem, 1200px);
   margin: 0 auto;
-  max-width: 40rem;
   margin-top: 5rem;
   text-align: center;
 }
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
+
 main {
   min-height: 100vh;
   display: grid;
@@ -193,6 +188,8 @@ h3 {
   margin-top: 2rem;
   margin-bottom: 4rem;
   display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -213,5 +210,7 @@ button {
   background: var(--clr-primary-10);
 }
 .result {
+  width: min(100% - 2rem, 600px);
+  margin-inline: auto;
   margin-bottom: 2rem;
 }
